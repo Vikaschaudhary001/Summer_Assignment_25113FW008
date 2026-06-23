@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string str;
+    cin>>str;
+    for(int i=0;str.length();i++){
+  int count =0;
+  for(int j=0;j<str.length();j++){
+    if(str[i]==str[j])
+    count++;
+  }
+  if(count==1){
+    cout<<str[i];
+    return 0;
+  }
+
+}
+cout<<"no non-repeating character";
+return 0;
+}
